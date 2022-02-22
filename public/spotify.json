@@ -1,0 +1,13 @@
+{
+    "allPlaylists": [
+        {
+       "name":"a"
+       },
+       {
+        "name":"b"    
+        },
+        {
+            "name":"c"
+            }
+    ]
+}

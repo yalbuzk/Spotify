@@ -1,13 +1,147 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*----------------------*/
+
+.sidenav {
+  flex-direction: column;
+  background-color: #030303;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.logo img {
+  padding: 20px 0 0 32px;
+  margin: 10px;
+  max-width: 200px;
+  background-color: transparent;
+}
+
+.menulink {
+  margin-top: 40px;
+}
+
+.menulink  i{
+  flex-direction: column;
+  padding: 10px;
+  margin-left: -10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  
+}
+
+.menulink a {
+  font-family: 'Lato', sans-serif;
+}
+
+
+.btn {
+  width: 80%;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 10px; 
+ background-color:#2B2525;
+  color: white;
+ 
+}
+
+.btn a {
+  padding: 2px;
+  padding-right: 40px;
+
+}
+
+/*----------------------------*/
+
+main {
+  background-image: linear-gradient(113.83deg, #121212 0.59%, #121212 99.74%);
+  margin-left: 250px;
+  margin-bottom: 60px;
+  color: white;
+  overflow: hidden;
+}
+
+.toplist ul li:first-child {
+  color: white;
+}
+
+.toplist {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+.container-flex {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-flex .toplist a {
+  justify-content: center;
+}
+.music-card {
+  padding-bottom: 30px;
+}
+.music-card img {
+  margin-left: 10px;
+  padding-left: 10px;
+  max-width: 170px;
+}
+.music-card p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.music-card2 {
+  padding-bottom: 30px;
+}
+.music-card2 img {
+  margin-left: 10px;
+  padding-left: 10px;
+  max-width: 170px;
+}
+.music-card2 p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+/*----------------------*/
+
+footer {
+  background-color: #282828;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  color: grey;
+}
+footer i {
+  padding: 20px 20px 0 0;
+  font-size: 18px;
 }
